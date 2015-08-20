@@ -1,0 +1,147 @@
+		<html>
+		<head>
+			<link href="http://assets.livestax.com/theme-0.0.1.css" rel="stylesheet" type="text/css" media="all">
+			<link href="css/causeway-livestax.min.css" rel="stylesheet" media="screen">
+			<link rel="stylesheet" type="text/css" href="css/appstyle.css">
+			<script src="http://assets.livestax.com/livestax-0.2.0.min.js"></script>
+			<script src="js/jquery.min.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/Chart.js"></script>
+			
+		</head>
+
+			<script type="text/javascript">
+				<!--
+				function toggle_visibility(id) {
+					var e = document.getElementById(id);
+					if(e.style.display == 'block')
+						e.style.display = 'none';
+					else
+						e.style.display = 'block';
+				}
+		//-->
+		</script>
+
+		<div class="tab-system">
+		  <div class="ls-component">
+		    <ul class="nav nav-tabs">
+		      <li class="active"><a href="#overview" data-toggle="tab">Overview</a></li>
+		      <li><a href="#squads" data-toggle="tab">Squads</a></li>
+		      <li><a href="#people" data-toggle="tab">People</a></li>
+		      </li>
+		    </ul>
+
+	<div id="myTabContent" class="tab-content">
+	  <div class="tab-pane fade active in" id="overview">
+		<div id="canvas-holder">
+			<div class="graph-title text-normal">Employees by Area<span class="btn-group pull-right">
+
+			    <a href="#" class="graph-dropdown btn btn-default dropdown-toggle menu" data-toggle="dropdown">
+			        <i class="fa fa-bar-chart fa-1x"></i>
+			        <span class="caret"></span>
+			    </a>
+
+			    <ul class="dropdown-menu dropdown-menu-right">
+			        <li><a href="#"><span>Employees by Area</span></a></li>
+			        <li><a href="#"><span>Employees Trend</span></a></li>
+			    </ul>
+			    </span>
+			</div>
+		
+
+	<script>
+		var pieData = [
+				{
+					value: 20746,
+					color: "#dfdddf",
+					label: "Growth"
+				},
+				{
+					value: 10919,
+					color: "#3fbfbe",
+					label: "Engagement"
+				},
+				{
+					value: 100764,
+					color: "#eae4b0",
+					label: "Engineering"
+				}
+			];
+
+			window.onload = function(){
+				var ctx = document.getElementById("chart-area").getContext("2d");
+				window.myPie = new Chart(ctx).Pie(pieData);
+			};
+	</script>
+
+			<div class="graph-labels text-normal pull-left">
+			<div class="graph-label">
+			  <span class="circle" style="background:#dfdddf;"></span>
+			  <span class="legend-label text-normalminus">Growth</span>
+			</div>
+			<div class="graph-label">
+			  <span class="circle" style="background:#3fbfbe;"></span>
+			  <span class="legend-label text-normalminus">Engagement</span>
+			</div>
+			<div class="graph-label">
+			  <span class="circle" style="background:#eae4b0;"></span>
+			  <span class="legend-label text-normalminus">Engineering</span>
+			</div>
+			</div>
+			<canvas class="graph pull-right" id="chart-area" width="130" height="130"/>		
+		</div>
+
+
+		<ul class="tile-grid">
+		    <li class="row total-bu">
+		    	<div class="col-xs-12 tile">
+		        <div class=" tile-content">
+		            <h2 class="tile-title text-info text-x-large text-weaker pull-left">48</h2>
+					<p class="tile-value text-normal text-larger pull-left">Business Unit Employees</p>
+		        </div>
+		        </div>
+		    </li>
+
+		    <li class="row">
+		        <div class="col-xs-12 tile">
+		        <div class="united-kingdom tile-content">
+		            <h2 class="tile-title text-info text-larger pull-left">29</h2>
+		    		<p class="tile-value text-normal text-normalplus pull-left">United Kingdom</p>
+		        </div>
+		        <span class="tile-percentage text-muted text-normal text-weaker text-x-large pull-right">60%</span>
+		        </div>
+		    </li>
+
+		    <li class="row">
+		        <div class="col-xs-12 tile">
+		        <div class="bangalore tile-content">
+		            <h2 class="tile-title text-info text-larger pull-left">18</h2>
+		    		<p class="tile-value text-normal text-normalplus pull-left">Bangalore</p>
+		        </div>
+		        <span class="tile-percentage text-muted text-normal text-weaker text-x-large pull-right">38%</span>
+		        </div>
+		    </li>
+
+		    <li class="row">
+		        <div class="col-xs-12 tile">
+		        <div class="dubai tile-content">
+		            <h2 class="tile-title text-info text-larger pull-left">1</h2>
+		    		<p class="tile-value text-normal text-normalplus pull-left">Dubai</p>
+		        </div>
+		        <span class="tile-percentage text-muted text-normal text-weaker text-x-large pull-right">2%</span>
+		        </div>
+		    </li>
+		</ul>
+</div>
+	<div class="tab-pane fade" id="squads">
+	<p>Squads Content</p>
+	</div>
+
+	<div class="tab-pane fade" id="people">
+	<p>People Content</p>
+	</div>
+	</div>
+
+	<script src="js/causeway-livestax.min.js"></script>
+	</body>
+	</html>

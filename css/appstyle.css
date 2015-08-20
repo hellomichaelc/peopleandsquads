@@ -1,0 +1,83 @@
+.graph-title {
+	padding: 10px 5px 30px 10px;
+	font-weight: bold;
+}
+
+.graph-labels {
+	padding: 0px 0px 90px 10px;
+	width: 40%;
+}
+
+.graph {
+	padding: 5px 10px 5px 0px;
+}
+
+.graph-dropdown {
+	margin-top: -7px;
+}
+
+.graph-label {
+	position: relative;
+	margin-bottom: 8px;
+}
+
+.tile-grid li:first-child  {
+	border-top: 1px solid #e8e8e8;
+}
+
+.tile-grid li:last-child  {
+	border-bottom: 1px solid #e8e8e8;
+	padding-bottom: 30px;
+}
+
+.tile-grid .tile  {
+	padding-left: 20px;
+	padding-right: 15px;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  display: block;
+  position: absolute;
+  top: 2px;
+  }
+
+.legend-label {
+    margin-left: 22px;
+  }
+
+.img-circle {
+	margin-right: 5px;
+}
+
+.tile-grid .tile-value {
+	text-align: left;
+}
+
+.tile-grid .tile-content {
+	width: 70%;
+}
+
+.tile-grid .united-kingdom {
+	width: 40%;
+}
+
+.tile-grid .bangalore{
+	width: 30%;
+}
+
+.tile-grid .dubai {
+	width: 10%;
+}
+
+.tile-grid .tile-percentage {
+	color: #d6d6d6;
+}
+
+.tile-grid .tile {
+	border-bottom: none;
+	padding-bottom: 0px;
+	padding-top: 25px;
+}
