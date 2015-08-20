@@ -1,3 +1,7 @@
+.nav-tabs {
+	margin-top: -1px;
+}
+
 .graph-title {
 	padding: 10px 5px 30px 10px;
 	font-weight: bold;
